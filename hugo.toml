@@ -1,0 +1,16 @@
+baseURL = "https://ctpsstaff.github.io/boston-region-stops/"
+languageCode = "en-us"
+title = "Boston Region STOPS"
+theme = "ananke"
+
+[params]
+  # You can add a description for the site homepage here
+  description = "Official resource hub for the Boston Region STOPS model."
+
+  # Ananke theme specific params can be found in its documentation
+
+# This adds a "Documentation" link to your site's main menu
+[[menu.main]]
+  name = "Documentation"
+  url = "/docs"
+  weight = 20
