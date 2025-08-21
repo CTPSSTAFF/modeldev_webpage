@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <div class="cf pa3 pa4-l">
+    <article class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
+      <p>{{ .Content }}</p>
+    </article>
+    <div class="mw8 center">
+      <section class="flex-ns flex-wrap justify-around mt5">
+        {{ range .Pages.ByWeight }}
+          <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="pa3 pa4-ns">
+              <h1 class="f3"><a href="{{ .RelPermalink }}" class="link black dim">{{ .Title }}</a></h1>
+              <p class="f6 f5-ns measure-narrow lh-copy mt0 mb0 black-60">
+                {{ .Summary }}
+              </p>
+            </div>
+          </div>
+        {{ end }}
+      </section>
+    </div>
+  </div>
+{{ end }}

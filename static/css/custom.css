@@ -1,0 +1,4 @@
+/* This rule targets the text with the "lh-copy" class only on the homepage */
+.home .lh-copy {
+    text-align: left;
+}

@@ -6,7 +6,7 @@
     
     <title>User Guide for Version 1.1 | Boston Region STOPS Model</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Official documentation and resource hub for the Boston Region STOPS model, prepared for the Boston Region MPO.">
+    <meta name="description" content="Official resource hub for the Boston Region STOPS model.">
     <meta name="generator" content="Hugo 0.148.2">
     
     
@@ -19,6 +19,10 @@
 <link rel="stylesheet" href="/boston-region-stops/ananke/css/main.min.css" >
 
 
+
+  
+    <link rel="stylesheet" href="/boston-region-stops/css/custom.css">
+  
 
 
     
@@ -43,18 +47,18 @@
     <meta property="og:url" content="http://localhost:1313/boston-region-stops/docs/v1.1/">
   <meta property="og:site_name" content="Boston Region STOPS Model">
   <meta property="og:title" content="User Guide for Version 1.1">
-  <meta property="og:description" content="This guide provides user guidance for Version 1.1 of the Boston Regional STOPS model. This version is identical to v1.0 with the primary exception of an updated transit network reflecting a theoretical 2025 Spring GTFS schedule.
+  <meta property="og:description" content="This guide provides user guidance for Version 1.1 of the Boston Regional STOPS model, which includes the theoretical 2025 Spring GTFS schedule.
 Below you will find the chapters of the user guide.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="User Guide for Version 1.1">
-  <meta itemprop="description" content="This guide provides user guidance for Version 1.1 of the Boston Regional STOPS model. This version is identical to v1.0 with the primary exception of an updated transit network reflecting a theoretical 2025 Spring GTFS schedule.
+  <meta itemprop="description" content="This guide provides user guidance for Version 1.1 of the Boston Regional STOPS model, which includes the theoretical 2025 Spring GTFS schedule.
 Below you will find the chapters of the user guide.">
-  <meta itemprop="wordCount" content="46">
+  <meta itemprop="wordCount" content="32">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="User Guide for Version 1.1">
-  <meta name="twitter:description" content="This guide provides user guidance for Version 1.1 of the Boston Regional STOPS model. This version is identical to v1.0 with the primary exception of an updated transit network reflecting a theoretical 2025 Spring GTFS schedule.
+  <meta name="twitter:description" content="This guide provides user guidance for Version 1.1 of the Boston Regional STOPS model, which includes the theoretical 2025 Spring GTFS schedule.
 Below you will find the chapters of the user guide.">
 
 	
@@ -121,49 +125,54 @@ Below you will find the chapters of the user guide.">
 
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"><p>This guide provides user guidance for <strong>Version 1.1</strong> of the Boston Regional STOPS model. This version is identical to v1.0 with the primary exception of an updated transit network reflecting a <strong>theoretical 2025 Spring GTFS schedule</strong>.</p>
+  <div class="cf pa3 pa4-l">
+    <article class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
+      <p><p>This guide provides user guidance for <strong>Version 1.1</strong> of the Boston Regional STOPS model, which includes the theoretical <strong>2025 Spring GTFS schedule</strong>.</p>
 <p>Below you will find the chapters of the user guide.</p>
-</section>
-    <section class="flex-ns mt5 flex-wrap justify-around">
-      
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
-    <span class="f6 db">User Guide for Version 1.1</span>
-    <h1 class="f3 near-black">
-      <a href="/boston-region-stops/docs/v1.1/gtfs-changes/" class="link black dim">
-        GTFS Changes in v1.1
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>Version 1.1 incorporates a new theoretical GTFS fileset representing the planned Spring 2025 service changes. This section details those changes and their impact on the model application.</p>
-    </div>
-    <a href="/boston-region-stops/docs/v1.1/gtfs-changes/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-  </div>
-</div>
-
-        </div>
-      
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
-    <span class="f6 db">User Guide for Version 1.1</span>
-    <h1 class="f3 near-black">
-      <a href="/boston-region-stops/docs/v1.1/introduction/" class="link black dim">
+</p>
+    </article>
+    <div class="mw8 center">
+      <section class="flex-ns flex-wrap justify-around mt5">
         
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
+          <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="pa3 pa4-ns">
+              <h1 class="f3"><a href="/boston-region-stops/docs/v1.1/introduction/" class="link black dim">1. Introduction</a></h1>
+              <p class="f6 f5-ns measure-narrow lh-copy mt0 mb0 black-60">
+                <p>This user guide assumes prior familiarity with the STOPS modeling framework. For comprehensive instructions on how to use the STOPS software itself, users should refer to the Federal Transit Administration’s (FTA) STOPS User Guide.</p>
+<p>For additional context on the development of the Boston-specific implementation, including data inputs, assumptions, and calibration results, users should consult the Boston Regional STOPS Model Development Report.</p>
+              </p>
+            </div>
+          </div>
+        
+          <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="pa3 pa4-ns">
+              <h1 class="f3"><a href="/boston-region-stops/docs/v1.1/initial-run/" class="link black dim">2. Initial Model Run</a></h1>
+              <p class="f6 f5-ns measure-narrow lh-copy mt0 mb0 black-60">
+                <p>This chapter documents the steps to complete the initial runs of the Boston Regional STOPS Model.</p>
+<h3 id="21-model-setup">2.1 Model Setup</h3>
+<p>The model files should be extracted to a high-level directory, such as <code>C:\BostonSTOPS</code>. It is recommended that the full Windows file path contain no blank spaces. After launching <code>STOPSMenu.exe</code>, the user must link the appropriate GIS and Python executables.</p>
+<h3 id="22-data-preparation-steps">2.2 Data Preparation Steps</h3>
+<p>After completing the model setup, users should perform a preliminary run of STOPS Steps 7 through 10 on the STOPS menu.</p>
+              </p>
+            </div>
+          </div>
+        
+          <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="pa3 pa4-ns">
+              <h1 class="f3"><a href="/boston-region-stops/docs/v1.1/model-application/" class="link black dim">3. Model Application</a></h1>
+              <p class="f6 f5-ns measure-narrow lh-copy mt0 mb0 black-60">
+                <p>This chapter describes the key model files that should be reviewed and updated when applying the model to a transit project.</p>
+<h3 id="31-regional-vs-corridor-calibration">3.1 Regional vs. Corridor Calibration</h3>
+<p>While the model has been calibrated at a regional level, users should carefully review outputs for their specific corridor of interest before developing ridership forecasts.</p>
+<h3 id="32-define-forecast-years--mpo-data">3.2 Define Forecast Years &amp; MPO Data</h3>
+<p>In Step 4, users can define additional forecast years. This requires adding new population and employment fields to the <code>MPO0000TAZPopEmp.shp</code> file and updating highway travel time skims.</p>
+              </p>
+            </div>
+          </div>
+        
+      </section>
     </div>
-    <a href="/boston-region-stops/docs/v1.1/introduction/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
-</div>
-
-        </div>
-      
-    </section></article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

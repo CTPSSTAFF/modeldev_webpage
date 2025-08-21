@@ -40,10 +40,10 @@ In Step 4, users can define additional forecast years. This requires adding new 
     
 
     
-      <link rel="canonical" href="http://localhost:1313/boston-region-stops/docs/v1.0/model-application/">
+      <link rel="canonical" href="http://localhost:1313/boston-region-stops/docs/v1.1/model-application/">
     
 
-    <meta property="og:url" content="http://localhost:1313/boston-region-stops/docs/v1.0/model-application/">
+    <meta property="og:url" content="http://localhost:1313/boston-region-stops/docs/v1.1/model-application/">
   <meta property="og:site_name" content="Boston Region STOPS Model">
   <meta property="og:title" content="3. Model Application">
   <meta property="og:description" content="This chapter describes the key model files that should be reviewed and updated when applying the model to a transit project.
@@ -57,7 +57,7 @@ In Step 4, users can define additional forecast years. This requires adding new 
   <meta itemprop="description" content="This chapter describes the key model files that should be reviewed and updated when applying the model to a transit project.
 3.1 Regional vs. Corridor Calibration While the model has been calibrated at a regional level, users should carefully review outputs for their specific corridor of interest before developing ridership forecasts.
 3.2 Define Forecast Years &amp; MPO Data In Step 4, users can define additional forecast years. This requires adding new population and employment fields to the MPO0000TAZPopEmp.shp file and updating highway travel time skims.">
-  <meta itemprop="wordCount" content="136">
+  <meta itemprop="wordCount" content="143">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="3. Model Application">
   <meta name="twitter:description" content="This chapter describes the key model files that should be reviewed and updated when applying the model to a transit project.
@@ -131,7 +131,7 @@ In Step 4, users can define additional forecast years. This requires adding new 
     <header class="mt4 w-100">
       <aside class="instapaper_ignoref b helvetica tracked ttu">
           
-        User Guide for Version 1.0
+        User Guide for Version 1.1
       </aside><div id="sharing" class="mt3 ananke-socials"></div>
 <h1 class="f1 athelas mt3 mb1">3. Model Application</h1>
       
@@ -147,7 +147,7 @@ In Step 4, users can define additional forecast years. This requires adding new 
 <h3 id="32-define-forecast-years--mpo-data">3.2 Define Forecast Years &amp; MPO Data</h3>
 <p>In Step 4, users can define additional forecast years. This requires adding new population and employment fields to the <code>MPO0000TAZPopEmp.shp</code> file and updating highway travel time skims.</p>
 <h3 id="33-transit-network-gtfs">3.3 Transit Network (GTFS)</h3>
-<p>The transit system is represented by GTFS data for the MBTA, BATA, CATA, MVRTA, and MWRTA. The &ldquo;Existing&rdquo; scenario represents service as of September/October 2024.</p>
+<p>The transit system is represented by GTFS data. <strong>This version uses a theoretical 2025 Spring schedule from the MBTA.</strong> Data for BATA, CATA, MVRTA, and MWRTA remains unchanged from the 2024 network.</p>
 <h3 id="34-park-and-rides">3.4 Park and Rides</h3>
 <p>STOPS uses an additional file, <code>pnr.txt</code>, located within each GTFS folder to define park-and-ride locations, capacities, and costs.</p>
 <ul class="pa0">

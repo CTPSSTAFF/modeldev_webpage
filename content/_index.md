@@ -1,5 +1,6 @@
 ---
 title: "The Boston Region STOPS Model"
+featured_image: '/images/network-background.png'
 ---
 
 Welcome to the official resource hub for the Boston Region STOPS model, a state-of-the-art tool designed for comprehensive transportation planning and analysis in the Boston region.

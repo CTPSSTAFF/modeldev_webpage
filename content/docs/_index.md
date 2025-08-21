@@ -6,8 +6,8 @@ This section contains detailed documentation for different versions of the Bosto
 
 ## Available Model Versions
 
-* ### [Version 1.1 (Latest)](/docs/v1.1/)
+* ### [Version 1.1 (Latest)]({{< relref "docs/v1.1" >}})
     *Includes the theoretical 2025 Spring GTFS schedule.*
 
-* ### [Version 1.0](/docs/v1.0/)
+* ### [Version 1.0]({{< relref "docs/v1.0" >}})
     *Represents the baseline 2024 conditions.*
