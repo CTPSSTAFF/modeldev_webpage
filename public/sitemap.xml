@@ -2,18 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/boston-region-stops/docs/version-3-2/</loc>
+    <loc>http://localhost:1313/boston-region-stops/about/what-is-stops/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/docs/version-3-2/installation/</loc>
+    <loc>http://localhost:1313/boston-region-stops/about/boston-implementation/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/docs/version-3-2/data-inputs/</loc>
+    <loc>http://localhost:1313/boston-region-stops/docs/v1.0/</loc>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/docs/v1.0/introduction/</loc>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/docs/v1.0/initial-run/</loc>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/docs/v1.0/model-application/</loc>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/docs/v1.1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/docs/v1.1/gtfs-changes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/announcements/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/docs/v1.1/introduction/</loc>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/about/</loc>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/</loc>
   </url><url>
+    <loc>http://localhost:1313/boston-region-stops/resources/</loc>
+  </url><url>
     <loc>http://localhost:1313/boston-region-stops/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/</loc>
+    <loc>http://localhost:1313/boston-region-stops/user-agreement/</loc>
   </url>
 </urlset>

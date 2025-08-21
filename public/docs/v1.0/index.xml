@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>User Guide for Version 1.0 on Boston Region STOPS Model</title>
+    <link>http://localhost:1313/boston-region-stops/docs/v1.0/</link>
+    <description>Recent content in User Guide for Version 1.0 on Boston Region STOPS Model</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/boston-region-stops/docs/v1.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Introduction</title>
+      <link>http://localhost:1313/boston-region-stops/docs/v1.0/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/docs/v1.0/introduction/</guid>
+      <description>&lt;p&gt;This user guide assumes prior familiarity with the STOPS modeling framework. For comprehensive instructions on how to use the STOPS software itself, users should refer to the Federal Transit Administration’s (FTA) STOPS User Guide.&lt;/p&gt;&#xA;&lt;p&gt;For additional context on the development of the Boston-specific implementation, including data inputs, assumptions, and calibration results, users should consult the Boston Regional STOPS Model Development Report.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2. Initial Model Run</title>
+      <link>http://localhost:1313/boston-region-stops/docs/v1.0/initial-run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/docs/v1.0/initial-run/</guid>
+      <description>&lt;p&gt;This chapter documents the steps to complete the initial runs of the Boston Regional STOPS Model.&lt;/p&gt;&#xA;&lt;h3 id=&#34;21-model-setup&#34;&gt;2.1 Model Setup&lt;/h3&gt;&#xA;&lt;p&gt;The model files should be extracted to a high-level directory, such as &lt;code&gt;C:\BostonSTOPS&lt;/code&gt;. It is recommended that the full Windows file path contain no blank spaces. After launching &lt;code&gt;STOPSMenu.exe&lt;/code&gt;, the user must link the appropriate GIS and Python executables.&lt;/p&gt;&#xA;&lt;h3 id=&#34;22-data-preparation-steps&#34;&gt;2.2 Data Preparation Steps&lt;/h3&gt;&#xA;&lt;p&gt;After completing the model setup, users should perform a preliminary run of STOPS Steps 7 through 10 on the STOPS menu.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3. Model Application</title>
+      <link>http://localhost:1313/boston-region-stops/docs/v1.0/model-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/docs/v1.0/model-application/</guid>
+      <description>&lt;p&gt;This chapter describes the key model files that should be reviewed and updated when applying the model to a transit project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;31-regional-vs-corridor-calibration&#34;&gt;3.1 Regional vs. Corridor Calibration&lt;/h3&gt;&#xA;&lt;p&gt;While the model has been calibrated at a regional level, users should carefully review outputs for their specific corridor of interest before developing ridership forecasts.&lt;/p&gt;&#xA;&lt;h3 id=&#34;32-define-forecast-years--mpo-data&#34;&gt;3.2 Define Forecast Years &amp;amp; MPO Data&lt;/h3&gt;&#xA;&lt;p&gt;In Step 4, users can define additional forecast years. This requires adding new population and employment fields to the &lt;code&gt;MPO0000TAZPopEmp.shp&lt;/code&gt; file and updating highway travel time skims.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

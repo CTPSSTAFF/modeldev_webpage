@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Boston Region STOPS Model on Boston Region STOPS</title>
+    <title>The Boston Region STOPS Model on Boston Region STOPS Model</title>
     <link>http://localhost:1313/boston-region-stops/</link>
-    <description>Recent content in The Boston Region STOPS Model on Boston Region STOPS</description>
+    <description>Recent content in The Boston Region STOPS Model on Boston Region STOPS Model</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/boston-region-stops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation</title>
-      <link>http://localhost:1313/boston-region-stops/docs/version-3-2/installation/</link>
+      <title>What is FTA STOPS?</title>
+      <link>http://localhost:1313/boston-region-stops/about/what-is-stops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/boston-region-stops/docs/version-3-2/installation/</guid>
-      <description>&lt;p&gt;To install version 3.2, follow these steps&amp;hellip;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/boston-region-stops/about/what-is-stops/</guid>
+      <description>&lt;p&gt;The &lt;strong&gt;Simplified-Trips-on-Project Software (STOPS)&lt;/strong&gt; is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios.&lt;/p&gt;&#xA;&lt;p&gt;Since its original release in 2013, STOPS has been used for a wide range of applications, including transit alternative analysis, service planning, long-range transportation planning, and for predicting measures for FTA Capital Investment Grant (CIG) projects.&lt;/p&gt;&#xA;&lt;p&gt;STOPS has four main approaches for developing an application:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Data Inputs</title>
-      <link>http://localhost:1313/boston-region-stops/docs/version-3-2/data-inputs/</link>
+      <title>Boston Region Implementation</title>
+      <link>http://localhost:1313/boston-region-stops/about/boston-implementation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/boston-region-stops/docs/version-3-2/data-inputs/</guid>
-      <description>&lt;p&gt;This version requires the following data inputs&amp;hellip;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/boston-region-stops/about/boston-implementation/</guid>
+      <description>&lt;p&gt;The Boston Region STOPS model was developed, calibrated, and tested using STOPS version 2.53. It was prepared for the Boston Region Metropolitan Planning Organization (MPO) to support regional transportation planning and analysis.&lt;/p&gt;&#xA;&lt;h3 id=&#34;modeling-approach&#34;&gt;Modeling Approach&lt;/h3&gt;&#xA;&lt;p&gt;This model uses the &lt;strong&gt;“Synthetic with Special Markets”&lt;/strong&gt; STOPS approach. Due to the absence of a recent, detailed origin-destination on-board survey covering all routes, the &amp;ldquo;Synthetic&amp;rdquo; method was selected. This was supplemented with a special market trip table for air passengers traveling to and from Boston Logan International Airport. The model reflects average weekday ridership in the fall of 2024.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1. Introduction</title>
+      <link>http://localhost:1313/boston-region-stops/docs/v1.0/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/docs/v1.0/introduction/</guid>
+      <description>&lt;p&gt;This user guide assumes prior familiarity with the STOPS modeling framework. For comprehensive instructions on how to use the STOPS software itself, users should refer to the Federal Transit Administration’s (FTA) STOPS User Guide.&lt;/p&gt;&#xA;&lt;p&gt;For additional context on the development of the Boston-specific implementation, including data inputs, assumptions, and calibration results, users should consult the Boston Regional STOPS Model Development Report.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2. Initial Model Run</title>
+      <link>http://localhost:1313/boston-region-stops/docs/v1.0/initial-run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/docs/v1.0/initial-run/</guid>
+      <description>&lt;p&gt;This chapter documents the steps to complete the initial runs of the Boston Regional STOPS Model.&lt;/p&gt;&#xA;&lt;h3 id=&#34;21-model-setup&#34;&gt;2.1 Model Setup&lt;/h3&gt;&#xA;&lt;p&gt;The model files should be extracted to a high-level directory, such as &lt;code&gt;C:\BostonSTOPS&lt;/code&gt;. It is recommended that the full Windows file path contain no blank spaces. After launching &lt;code&gt;STOPSMenu.exe&lt;/code&gt;, the user must link the appropriate GIS and Python executables.&lt;/p&gt;&#xA;&lt;h3 id=&#34;22-data-preparation-steps&#34;&gt;2.2 Data Preparation Steps&lt;/h3&gt;&#xA;&lt;p&gt;After completing the model setup, users should perform a preliminary run of STOPS Steps 7 through 10 on the STOPS menu.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3. Model Application</title>
+      <link>http://localhost:1313/boston-region-stops/docs/v1.0/model-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/docs/v1.0/model-application/</guid>
+      <description>&lt;p&gt;This chapter describes the key model files that should be reviewed and updated when applying the model to a transit project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;31-regional-vs-corridor-calibration&#34;&gt;3.1 Regional vs. Corridor Calibration&lt;/h3&gt;&#xA;&lt;p&gt;While the model has been calibrated at a regional level, users should carefully review outputs for their specific corridor of interest before developing ridership forecasts.&lt;/p&gt;&#xA;&lt;h3 id=&#34;32-define-forecast-years--mpo-data&#34;&gt;3.2 Define Forecast Years &amp;amp; MPO Data&lt;/h3&gt;&#xA;&lt;p&gt;In Step 4, users can define additional forecast years. This requires adding new population and employment fields to the &lt;code&gt;MPO0000TAZPopEmp.shp&lt;/code&gt; file and updating highway travel time skims.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GTFS Changes in v1.1</title>
+      <link>http://localhost:1313/boston-region-stops/docs/v1.1/gtfs-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/docs/v1.1/gtfs-changes/</guid>
+      <description>&lt;p&gt;Version 1.1 incorporates a new theoretical GTFS fileset representing the planned Spring 2025 service changes. This section details those changes and their impact on the model application.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/boston-region-stops/docs/v1.1/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/docs/v1.1/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>User Agreement</title>
+      <link>http://localhost:1313/boston-region-stops/user-agreement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/boston-region-stops/user-agreement/</guid>
+      <description>&lt;p&gt;By  accessing the model files and data, you agree to the following terms and conditions&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
