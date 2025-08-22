@@ -5,7 +5,6 @@ theme = "ananke"
 
 [params]
   description = "Official resource hub for the Boston Region STOPS model."
-  custom_css = ["css/custom.css"] # <-- Add this line
 
 [[menu.main]]
   name = "About"
