@@ -43,16 +43,19 @@
     <meta property="og:url" content="http://localhost:1313/boston-region-stops/about/">
   <meta property="og:site_name" content="Boston Region STOPS Model">
   <meta property="og:title" content="About the Project">
-  <meta property="og:description" content="This section provides background on the FTA STOPS model and its specific implementation for the Boston Region, including a summary of the model development process.">
+  <meta property="og:description" content="What is FTA STOPS? The Simplified-Trips-on-Project Software (STOPS) is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios.
+Since its original release in 2013, STOPS has been used for a wide range of applications, including transit alternative analysis, service planning, long-range transportation planning, and for predicting measures for FTA Capital Investment Grant (CIG) projects.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="About the Project">
-  <meta itemprop="description" content="This section provides background on the FTA STOPS model and its specific implementation for the Boston Region, including a summary of the model development process.">
-  <meta itemprop="wordCount" content="25">
+  <meta itemprop="description" content="What is FTA STOPS? The Simplified-Trips-on-Project Software (STOPS) is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios.
+Since its original release in 2013, STOPS has been used for a wide range of applications, including transit alternative analysis, service planning, long-range transportation planning, and for predicting measures for FTA Capital Investment Grant (CIG) projects.">
+  <meta itemprop="wordCount" content="398">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="About the Project">
-  <meta name="twitter:description" content="This section provides background on the FTA STOPS model and its specific implementation for the Boston Region, including a summary of the model development process.">
+  <meta name="twitter:description" content="What is FTA STOPS? The Simplified-Trips-on-Project Software (STOPS) is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios.
+Since its original release in 2013, STOPS has been used for a wide range of applications, including transit alternative analysis, service planning, long-range transportation planning, and for predicting measures for FTA Capital Investment Grant (CIG) projects.">
 
 	
   </head><body class="ma0 avenir bg-near-white development">
@@ -118,52 +121,39 @@
 
     <main class="pb7" role="main">
       
+<main class="pb7" role="main">
   <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"><p>This section provides background on the FTA STOPS model and its specific implementation for the Boston Region, including a summary of the model development process.</p>
-</section>
-    <section class="flex-ns mt5 flex-wrap justify-around">
-      
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
-    <span class="f6 db">About the Project</span>
-    <h1 class="f3 near-black">
-      <a href="/boston-region-stops/about/what-is-stops/" class="link black dim">
-        What is FTA STOPS?
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>The <strong>Simplified-Trips-on-Project Software (STOPS)</strong> is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios.</p>
+
+    
+    <section class="cf ph3 ph5-l pv3 pt4-l f4 mw8 center lh-copy mid-gray">
+      <div class="tl"><h3 id="what-is-fta-stops">What is FTA STOPS?</h3>
+<p>The <strong>Simplified-Trips-on-Project Software (STOPS)</strong> is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios.</p>
 <p>Since its original release in 2013, STOPS has been used for a wide range of applications, including transit alternative analysis, service planning, long-range transportation planning, and for predicting measures for FTA Capital Investment Grant (CIG) projects.</p>
 <p>STOPS has four main approaches for developing an application:</p>
-    </div>
-    <a href="/boston-region-stops/about/what-is-stops/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-  </div>
-</div>
-
-        </div>
-      
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
-  <div class="mb3 pa4 gray overflow-hidden bg-white">
-    <span class="f6 db">About the Project</span>
-    <h1 class="f3 near-black">
-      <a href="/boston-region-stops/about/boston-implementation/" class="link black dim">
-        Boston Region Implementation
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>The Boston Region STOPS model was developed, calibrated, and tested using STOPS version 2.53. It was prepared for the Boston Region Metropolitan Planning Organization (MPO) to support regional transportation planning and analysis.</p>
-<h3 id="modeling-approach">Modeling Approach</h3>
+<ul>
+<li><strong>Synthetic:</strong> Relies on Census Transportation Planning Package (CTPP) data and demographic data from a regional travel model to estimate transit trips. This approach is mainly used when very sparse or no data regarding actual transit travel patterns is available.</li>
+<li><strong>Incremental:</strong> Relies on data from a comprehensive transit origin-destination on-board survey as the basis for developing person trips and calibrating the model.</li>
+<li><strong>Synthetic with Special Markets:</strong> Uses the &ldquo;Synthetic&rdquo; approach but supplements it with data for distinct travel patterns not captured by CTPP data, such as large airports, universities, or tourist areas.</li>
+<li><strong>Synthetic + Incremental:</strong> Combines both approaches, suitable for when a transit survey exists but the modeling area needs to be larger to cover a full project service area.</li>
+</ul>
+<hr>
+<h3 id="boston-region-implementation">Boston Region Implementation</h3>
+<p>The Boston Region STOPS model was developed, calibrated, and tested using STOPS version 2.53. It was prepared for the Boston Region Metropolitan Planning Organization (MPO) to support regional transportation planning and analysis.</p>
+<h4 id="modeling-approach">Modeling Approach</h4>
 <p>This model uses the <strong>“Synthetic with Special Markets”</strong> STOPS approach. Due to the absence of a recent, detailed origin-destination on-board survey covering all routes, the &ldquo;Synthetic&rdquo; method was selected. This was supplemented with a special market trip table for air passengers traveling to and from Boston Logan International Airport. The model reflects average weekday ridership in the fall of 2024.</p>
-    </div>
-    <a href="/boston-region-stops/about/boston-implementation/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-  </div>
+<h4 id="modeling-area">Modeling Area</h4>
+<p>The geographic coverage of the model includes the states of Massachusetts (MA), Rhode Island (RI), and New Hampshire (NH), generally aligning with the latest regional travel demand model. Within STOPS, trip movements are configured to include flows within Massachusetts and inter-state flows between MA and NH, and MA and RI. Trip movements entirely within RI and NH are excluded from the analysis.</p>
+<p>STOPS only analyzes zones whose centroids fall within 25 miles of an active transit stop, which means the western portion of Massachusetts and the northern portion of New Hampshire are not included in the active modeling area.</p>
 </div>
+    </section>
 
-        </div>
+    
+    <section class="flex-ns flex-wrap justify-around mt5">
       
-    </section></article>
+    </section>
+
+  </article>
+</main>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

@@ -9,20 +9,6 @@
     <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/boston-region-stops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What is FTA STOPS?</title>
-      <link>http://localhost:1313/boston-region-stops/about/what-is-stops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/boston-region-stops/about/what-is-stops/</guid>
-      <description>&lt;p&gt;The &lt;strong&gt;Simplified-Trips-on-Project Software (STOPS)&lt;/strong&gt; is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios.&lt;/p&gt;&#xA;&lt;p&gt;Since its original release in 2013, STOPS has been used for a wide range of applications, including transit alternative analysis, service planning, long-range transportation planning, and for predicting measures for FTA Capital Investment Grant (CIG) projects.&lt;/p&gt;&#xA;&lt;p&gt;STOPS has four main approaches for developing an application:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Boston Region Implementation</title>
-      <link>http://localhost:1313/boston-region-stops/about/boston-implementation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/boston-region-stops/about/boston-implementation/</guid>
-      <description>&lt;p&gt;The Boston Region STOPS model was developed, calibrated, and tested using STOPS version 2.53. It was prepared for the Boston Region Metropolitan Planning Organization (MPO) to support regional transportation planning and analysis.&lt;/p&gt;&#xA;&lt;h3 id=&#34;modeling-approach&#34;&gt;Modeling Approach&lt;/h3&gt;&#xA;&lt;p&gt;This model uses the &lt;strong&gt;“Synthetic with Special Markets”&lt;/strong&gt; STOPS approach. Due to the absence of a recent, detailed origin-destination on-board survey covering all routes, the &amp;ldquo;Synthetic&amp;rdquo; method was selected. This was supplemented with a special market trip table for air passengers traveling to and from Boston Logan International Airport. The model reflects average weekday ridership in the fall of 2024.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Official Release and Rollout for the Boston Region STOPS Model on September 30</title>
       <link>http://localhost:1313/boston-region-stops/announcements/2025-08-22-boston-region-stops-rollout/</link>
       <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
