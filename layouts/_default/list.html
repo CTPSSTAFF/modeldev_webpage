@@ -1,16 +1,16 @@
 {{ define "main" }}
 <main class="pb7" role="main">
-  <article class="pa3 pa4-ns nested-copy-line-height">
+  <article class="ph3 ph4-ns pb3 pb4-ns pt1 pt2-ns nested-copy-line-height">
 
     {{/* This section displays the intro text from the page's _index.md file */}}
-    <section class="cf ph3 ph5-l pv3 pt4-l f4 mw8 center lh-copy mid-gray">
+    <section class="cf ph3 ph5-l pb3 f4 mw8 center lh-copy mid-gray">
       <div class="tl">
         {{- .Content -}}
       </div>
     </section>
 
     {{/* This section displays the cards for any sub-pages */}}
-    <section class="cf ph3 ph5-l pv3 pt2-l f4 mw8 center lh-copy mid-gray">
+    <section class="cf ph3 ph5-l pb3 f4 mw8 center lh-copy mid-gray">
       {{ range .Pages }}
         <div class="relative w-100 w-30-l mb4 bg-white">
           {{ .Render "summary" }}
