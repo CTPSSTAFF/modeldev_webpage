@@ -6,13 +6,16 @@
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/versions/v0.1/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/announcements/</loc>
-    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/boston-region-stops/announcements/2026-08-23-placehodler_announcement/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/announcements/2025-08-22-boston-region-stops-rollout/</loc>
-    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/boston-region-stops/announcements/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/boston-region-stops/announcements/2025-08-22-boston-region-stops-rollout/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/versions/v0.1/introduction/</loc>

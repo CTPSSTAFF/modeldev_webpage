@@ -9,14 +9,16 @@
       </div>
     </section>
 
-    {{/* This section displays the cards for any sub-pages */}}
+    {{/* This section displays the cards for any sub-pages, except on the main /docs/ page */}}
+    {{ if not (eq .Permalink (absLangURL "docs/")) }}
     <section class="flex flex-wrap-l justify-center ph3 ph5-l pb3 f4 mw9 center lh-copy mid-gray">
     {{ range .Pages }}
         <div class="relative w-100 w-30-l pa2-l mh2-l mb4 bg-white">
         {{ .Render "summary" }}
         </div>
     {{ end }}
-    </section>
+     </section>
+    {{ end }}
 
   </article>
 </main>

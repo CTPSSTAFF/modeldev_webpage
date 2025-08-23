@@ -1,6 +1,6 @@
 ---
-title: "2025-08-22 Official Release and Rollout for the Boston Region STOPS Model on September 30"
-date: 2025-08-22
+title: "2025-08-23 Placeholder Announcement"
+date: 2025-08-23
 ---
 
 The Central Transportation Planning Staff (CTPS), on behalf of the Boston Region MPO, is pleased to announce the official release date for the Boston Region STOPS model and its associated materials. The full model package and documentation will be made publicly available through this website on **Tuesday, September 30, 2025**.
