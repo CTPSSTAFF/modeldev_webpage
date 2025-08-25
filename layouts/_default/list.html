@@ -9,16 +9,32 @@
       </div>
     </section>
 
-    {{/* This section displays the cards for any sub-pages, except on the main /docs/ page */}}
-    {{ if not (eq .Permalink (absLangURL "docs/")) }}
-    <section class="flex flex-wrap-l justify-center ph3 ph5-l pb3 f4 mw9 center lh-copy mid-gray">
-    {{ range .Pages }}
-        <div class="relative w-100 w-30-l pa2-l mh2-l mb4 bg-white">
-        {{ .Render "summary" }}
+
+    <!-- Handle Documentation Page's default Panel Removal  -->
+    {{ if not (eq .Permalink (absLangURL "docs/")) }}
+      {{/* This section displays the cards for any sub-pages in a responsive grid */}}
+      {{ $pages := .Pages }}
+      {{/* Optional: Sort pages differently for specific sections */}}
+      {{ if eq .Section "announcements" }}
+        {{ $pages = .Pages.ByDate.Reverse }}
+      {{ else }}
+        {{ $pages = .Pages.ByWeight }}
+      {{ end }}
+      
+      {{ if $pages }}
+      <section class="mw9 center">
+        <div class="flex flex-wrap -m2">
+        {{ range $pages }}
+          <div class="w-100 w-50-m w-third-l pa2 flex">
+            <div class="relative bg-white h-100">
+              {{ .Render "summary" }}
+            </div>
+          </div>
+        {{ end }}
         </div>
+      </section>
+      {{ end }}
     {{ end }}
-     </section>
-    {{ end }}
 
   </article>
 </main>
