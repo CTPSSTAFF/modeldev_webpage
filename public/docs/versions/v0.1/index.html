@@ -118,6 +118,10 @@
     <main class="pb7" role="main">
       
 <main class="pb7" role="main">
+
+
+
+
   <article class="ph3 ph4-ns pb3 pb4-ns pt1 pt2-ns nested-copy-line-height">
 
     
@@ -195,15 +199,6 @@
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       <p>This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model using STOPS version 2.53.</p>
-<h3 id="analysis-years">Analysis Years</h3>
-<p>The model is configured for several analysis years:</p>
-<ul>
-<li><strong>Current Year:</strong> 2024 (the calibration year)</li>
-<li><strong>10-Year Horizon:</strong> 2045 (to align with FTA CIG project requirements)</li>
-<li><strong>20-Year Horizon:</strong> 2050 (aligning with the region&rsquo;s Long-Range Transportation Plan)</li>
-</ul>
-<h3 id="mpo-data">MPO Data</h3>
-<p>STOPS requires TAZ-level population and employment data and zone-to-zone auto travel times and distances as inputs. These are obtained from the Boston Region MPO&rsquo;s regional travel demand model for the years 2019 (as a proxy for 2024) and 2050.</p>
     </div>
     <a href="/boston-region-stops/docs/versions/v0.1/inputs/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
@@ -226,15 +221,6 @@
       <p>This chapter describes the adjustments made to calibrate the model to observed conditions and summarizes the final STOPS estimates.</p>
 <h3 id="calibration-adjustments">Calibration Adjustments</h3>
 <p>To calibrate the model to local conditions, several adjustments were made to STOPS parameters and input files, including:</p>
-<ul>
-<li><strong>Transfer Penalty:</strong> Adjusted to 3.0 minutes to reflect the difficulty of transferring between routes.</li>
-<li><strong>Auto Time Adjustment:</strong> Constants and factors were applied to normalize MPO travel times to observed congested highway travel times.</li>
-<li><strong>ACS Zone Splits:</strong> Several large census zones were split to align more closely with the TAZ boundaries, adding approximately 900 zones.</li>
-<li><strong>Fare File:</strong> The value of time (VOT) was increased, and ferry/commuter rail fares were adjusted to reflect monthly pass rates.</li>
-<li><strong>Station Penalties:</strong> Penalties were added at many park-and-ride (PNR) lots to reflect actual parking capacities.</li>
-</ul>
-<h3 id="calibration-results">Calibration Results</h3>
-<p>The calibration results reflect ridership on an average weekday in September/October 2024. The model was compared against observed data from sources like the 2023 MBTA Passenger Survey. STOPS produces boarding estimates by mode (Heavy Rail, Light Rail, Bus, etc.) that closely match the observed values for the MBTA and other regional transit agencies.</p>
     </div>
     <a href="/boston-region-stops/docs/versions/v0.1/outputs-calibration/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
@@ -255,27 +241,6 @@
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       <p>This guide outlines the steps for executing an initial run of the Boston Regional STOPS model, based on the official STOPS User Guide.</p>
-<h3 id="model-setup">Model Setup</h3>
-<ul>
-<li>Extract model files to a high-level directory (e.g., <code>C:\BostonSTOPS</code>).</li>
-<li>Ensure no blank spaces are in the file path.</li>
-<li>Launch <code>STOPSMenu.exe</code> and link the appropriate GIS and Python executables.</li>
-</ul>
-<h3 id="data-preparation">Data Preparation</h3>
-<ul>
-<li>Run <strong>Steps 7, 9, and 10</strong> individually from the STOPS menu.</li>
-<li>The status for each step will update to ‘FILES FOUND!’ upon successful completion.</li>
-</ul>
-<h3 id="run-batch-steps">Run Batch Steps</h3>
-<ul>
-<li>Execute the model by selecting <strong>Step 11</strong>, which runs all remaining batch processes.</li>
-<li>A full run for the Boston Regional model typically takes approximately five hours.</li>
-</ul>
-<h3 id="report-results">Report Results</h3>
-<ul>
-<li>After the run is complete, review results by selecting <strong>Step 12</strong>.</li>
-<li>Results can also be viewed directly by opening the text files in the <code>Reports</code> folder.</li>
-</ul>
     </div>
     <a href="/boston-region-stops/docs/versions/v0.1/running-the-model/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
@@ -296,8 +261,6 @@
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       <p>This chapter presents a test application of the Boston Regional STOPS model for a corridor and provides horizon year forecasts.</p>
-<h3 id="example-corridor-calibration">Example: Corridor Calibration</h3>
-<p>Before applying the model to a specific corridor (e.g., Blue Hill Avenue), inputs and results must be reviewed to ensure consistency with local conditions. This can involve:</p>
     </div>
     <a href="/boston-region-stops/docs/versions/v0.1/example-application/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>

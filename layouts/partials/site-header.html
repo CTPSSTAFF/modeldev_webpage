@@ -1,5 +1,9 @@
 {{ $featured_image := .Params.featured_image }}
 {{ if $featured_image }}
+  <!-- TIP: How the background image works:
+    1. The path is defined in the page's front matter (e.g., content/_index.md).
+    2. The image file itself must be placed in the 'static' folder (e.g., static/images/background.jpg).
+    3. Hugo's `relURL` function converts the path to a correct, site-relative URL. -->
   {{/* If a featured image is set, use it as a background */}}
   <!-- <header class="cover bg-top" style="background-image: url('{{ $featured_image | relURL }}');"> -->
   <header class="cover bg-top" style="background-image: url('{{ $featured_image | relURL }}');">

@@ -20,27 +20,27 @@
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/versions/v0.1/introduction/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/introduction/</loc>
+    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/1-introduction/</loc>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/versions/v0.1/configuration/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/configuration/</loc>
+    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/2-configuration/</loc>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/versions/v0.1/inputs/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/inputs/</loc>
+    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/3-inputs/</loc>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/versions/v0.1/outputs-calibration/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/outputs-calibration/</loc>
+    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/4-outputs-calibration/</loc>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/versions/v0.1/running-the-model/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/running-the-model/</loc>
+    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/5-running-the-model/</loc>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/docs/versions/v0.1/example-application/</loc>
   </url><url>
-    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/example-application/</loc>
+    <loc>http://localhost:1313/boston-region-stops/docs/versions/v1.0/6-example-application/</loc>
   </url><url>
     <loc>http://localhost:1313/boston-region-stops/about/</loc>
   </url><url>

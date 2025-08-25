@@ -2,7 +2,7 @@ baseURL = "https://ctpsstaff.github.io/boston-region-stops/"
 languageCode = "en-us"
 title = "Boston Region STOPS Model"
 theme = "ananke"
-summaryLength = 50
+summaryLength = 20
 
 [params]
   description = "Official resource hub for the Boston Region STOPS model."

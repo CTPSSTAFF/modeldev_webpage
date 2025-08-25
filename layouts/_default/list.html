@@ -1,5 +1,68 @@
 {{ define "main" }}
 <main class="pb7" role="main">
+
+<!-- CSS Documentation
+
+Tachyons classes use a shorthand naming convention. The first letters define the CSS property, like p for padding or m for margin. The next letters can define direction, like h for horizontal or t for top. The number at the end sets the size from a predefined scale. Classes can be applied at certain screen sizes by adding a suffix: -ns for not small screens, -m for medium screens and up, and -l for large screens only.
+
+Class                         Category      Description
+----------------------------  ------------  ------------------------------------------------------------------
+Layout
+----------------------------  ------------  ------------------------------------------------------------------
+bg-top                        Layout        Sets background-position: top.
+center                        Layout        Centers an element horizontally with margin: auto.
+cf                            Layout        "Clearfix" to contain floated child elements.
+cover                         Layout        Sets background-size: cover for background images.
+dib                           Layout        Sets display: inline-block.
+flex                          Layout        Sets display: flex.
+flex-wrap                     Layout        Allows flex items to wrap to the next line.
+relative                      Layout        Sets position: relative.
+tc-l                          Layout        Text align center on large screens.
+tl                            Layout        Text align left.
+
+Spacing
+----------------------------  ------------  ------------------------------------------------------------------
+-m2                           Spacing       Negative margin, scale 2. Used to counteract parent padding.
+mb0 - mb4                     Spacing       Margin bottom, from scale 0 to 4.
+mt3                           Spacing       Margin top, scale 3.
+mv4                           Spacing       Margin vertically (top and bottom), scale 4.
+pa2, pa3, pa4-ns              Spacing       Padding on all sides, at various scales.
+pb2 - pb7                     Spacing       Padding bottom, from scale 2 to 7.
+ph3, ph4-ns, ph5-l            Spacing       Padding horizontally (left and right).
+pt1, pt2-ns                   Spacing       Padding top, at various scales.
+pv3, pv4, pv6-l               Spacing       Padding vertically (top and bottom).
+
+Typography
+----------------------------  ------------  ------------------------------------------------------------------
+athelas                       Typography    Sets the font-family to "Athelas".
+f1 - f6                       Typography    Font size scale, from largest (f1) to smallest (f6).
+f-subheadline-l               Typography    Applies a very large font size on large screens.
+fw1, fw2                      Typography    Font weight scale (e.g., fw1 is font-weight: 100).
+lh-copy                       Typography    Sets a readable line-height for body text.
+lh-title                      Typography    Sets a tighter line-height for titles and headings.
+nested-copy-line-height     Typography    Applies line-height to nested paragraph elements.
+nested-links                  Typography    Applies a default style to nested link elements.
+tracked                       Typography    Applies a gentle letter-spacing for titles.
+
+Color
+----------------------------  ------------  ------------------------------------------------------------------
+bg-black                      Color         Sets the background color to black.
+bg-black-60                   Color         Sets the background to black with 60% opacity.
+bg-white                      Color         Sets the background color to white.
+light-silver                  Color         Sets the text color to a light silver.
+mid-gray                      Color         Sets the text color to a medium gray.
+white-80, white-90            Color         Sets the text color to white with 80% or 90% opacity.
+
+Sizing
+----------------------------  ------------  ------------------------------------------------------------------
+h-100                         Sizing        Sets height: 100%.
+measure-wide-l                Sizing        Sets a max-width for optimal readability on large screens.
+mw8, mw9                      Sizing        Max width, from scale 8 to 9.
+w-100                         Sizing        Sets width: 100%.
+w-50-m                        Sizing        Sets width: 50% on medium screens and up.
+w-third-l                     Sizing        Sets width: 33.333% on large screens. -->
+
+
   <article class="ph3 ph4-ns pb3 pb4-ns pt1 pt2-ns nested-copy-line-height">
 
     {{/* This section displays the intro text from the page's _index.md file */}}
