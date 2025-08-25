@@ -1,13 +1,33 @@
 {{ define "main" }}
 <main class="pb7" role="main">
 
-  {{/* This renders the content from content/_index.md, matching the original centered style */}}
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray">
+    <!-- 
+        cf            Contain
+        ph3           Padding-X
+        ph5-l         Padding-X-L
+        pv3           Padding-Y
+        pv4-l         Padding-Y-L
+        f4            FontSize
+        center        Center
+        tc-l          TextAlign-L
+        w-90-ns       Width-NS
+        mw8           MaxWidth
+        mw9           MaxWidth
+        lh-copy       LineHeight
+        nested-links  Links
+        mid-gray      Color
+    -->
+
+  {{/* This renders the content from content/_index.md in a wider container */}}
+  {{/* The 'measure-wide' class was removed and 'w-90-ns mw9' were added to increase the width */}}
+  <!-- <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center w-90-ns mw9 lh-copy nested-links mid-gray"> -->
+  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center mw8 lh-copy nested-links mid-gray">
     {{- .Content -}}
   </article>
 
-  {{/* This section displays announcements in the original list format */}}
+  {{/* This section displays announcements, reverted to its original width */}}
   {{ $pages := where .Site.RegularPages "Section" "announcements" }}
+  {{/* Corrected .byDate to .ByDate */}}
   {{ $sortedPages := $pages.ByDate.Reverse }}
 
   {{ if $sortedPages }}
