@@ -1,21 +1,23 @@
 {{ define "main" }}
-  <main class="pb7" role="main">
-    <article class="pa3 pa4-ns nested-copy-line-height">
-      <!-- TIP: Horizontal (ph) and bottom (pb) padding classes were removed from this section to make the content area wider. -->
-      <section class="cf f4 center lh-copy mid-gray" style="max-width: 80rem;">
-        <h1 class="f1 athelas mt3 mb1">{{ .Title }}</h1>
-        {{ with .Params.author }}
-          <p class="f6 dib tracked">{{ . }}</p>
-        {{ end }}
-        {{ if not .Date.IsZero }}
-          <time class="f6 mv4 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
-        {{ end }}
-        
-        <div class="nested-links">
-          {{- .Content -}}
-        </div>
+  {{/* The 'pt0' class ensures the <main> container itself has no top padding. */}}
+    <!-- <article class="ph3 center" style="font-size: 1.15rem; max-width: 80rem;"> -->
+<!--     <article class="ph3 f4 center" style="max-width: 80rem;"> -->
+<!--     <article class="ph3 nested-copy-line-height"> -->
+<!--      <section class="f4 center mid-gray" style="max-width: 80rem;"> -->
+    <article class="ph3 center" style="font-size: 1.115rem; max-width: 85rem; line-height: 1.21;">
+        {{ with .Params.author }}
+          <p class="f6 dib tracked">{{ . }}</p>
+        {{ end }}
+        {{ if not .Date.IsZero }}
+          {{/* The 'mv4' (vertical margin) class was changed to 'mb4' (margin-bottom only). */}}
+          {{/* This removes the whitespace that was appearing ABOVE the date. */}}
+          <time class="f6 mb4 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ end }}
+        
+        <div class="nested-links">
+          {{- .Content -}}
+        </div>
 
-      </section>
-    </article>
-  </main>
+<!--       </section> -->
+    </article>
 {{ end }}
