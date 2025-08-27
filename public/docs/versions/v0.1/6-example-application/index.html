@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>5. Running the Model | Boston Region STOPS Model</title>
+    <title>6. Example Application &amp; Forecasts (v0.1) | Boston Region STOPS Model</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="This guide outlines the steps for executing an initial run of the Boston Regional STOPS model, based on the official STOPS User Guide.">
+    <meta name="description" content="This chapter presents a test application of the Boston Regional STOPS model for a corridor and provides horizon year forecasts.">
     <meta name="generator" content="Hugo 0.148.2">
     
     
@@ -32,23 +32,23 @@
     
 
     
-      <link rel="canonical" href="http://localhost:1313/boston-region-stops/docs/versions/v1.0/5-running-the-model/">
+      <link rel="canonical" href="http://localhost:1313/boston-region-stops/docs/versions/v0.1/6-example-application/">
     
 
-    <meta property="og:url" content="http://localhost:1313/boston-region-stops/docs/versions/v1.0/5-running-the-model/">
+    <meta property="og:url" content="http://localhost:1313/boston-region-stops/docs/versions/v0.1/6-example-application/">
   <meta property="og:site_name" content="Boston Region STOPS Model">
-  <meta property="og:title" content="5. Running the Model">
-  <meta property="og:description" content="This guide outlines the steps for executing an initial run of the Boston Regional STOPS model, based on the official STOPS User Guide.">
+  <meta property="og:title" content="6. Example Application & Forecasts (v0.1)">
+  <meta property="og:description" content="This chapter presents a test application of the Boston Regional STOPS model for a corridor and provides horizon year forecasts.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
 
-  <meta itemprop="name" content="5. Running the Model">
-  <meta itemprop="description" content="This guide outlines the steps for executing an initial run of the Boston Regional STOPS model, based on the official STOPS User Guide.">
-  <meta itemprop="wordCount" content="136">
+  <meta itemprop="name" content="6. Example Application & Forecasts (v0.1)">
+  <meta itemprop="description" content="This chapter presents a test application of the Boston Regional STOPS model for a corridor and provides horizon year forecasts.">
+  <meta itemprop="wordCount" content="173">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="5. Running the Model">
-  <meta name="twitter:description" content="This guide outlines the steps for executing an initial run of the Boston Regional STOPS model, based on the official STOPS User Guide.">
+  <meta name="twitter:title" content="6. Example Application & Forecasts (v0.1)">
+  <meta name="twitter:description" content="This chapter presents a test application of the Boston Regional STOPS model for a corridor and provides horizon year forecasts.">
 
 	
   </head><body class="ma0 avenir bg-near-white development">
@@ -105,7 +105,7 @@
 
       <div class="tc-l pb2 ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          5. Running the Model
+          6. Example Application &amp; Forecasts (v0.1)
         </h1>
         
       </div>
@@ -124,27 +124,21 @@
         
         
         <div class="nested-links">
-         <p>This guide outlines the steps for executing an initial run of the Boston Regional STOPS model, based on the official STOPS User Guide.</p>
-<h3 id="model-setup">Model Setup</h3>
+         <p>This chapter presents a test application of the Boston Regional STOPS model for a corridor and provides horizon year forecasts.</p>
+<h3 id="example-corridor-calibration">Example: Corridor Calibration</h3>
+<p>Before applying the model to a specific corridor (e.g., Blue Hill Avenue), inputs and results must be reviewed to ensure consistency with local conditions. This can involve:</p>
+<ol>
+<li>Isolating specific routes (e.g., fare-free buses) in a new GTFS folder.</li>
+<li>Updating the STOPS parameter file and fare file to reflect the new GTFS.</li>
+<li>Updating district definitions and station groupings to provide more geographic detail.</li>
+</ol>
+<h3 id="sensitivity-tests">Sensitivity Tests</h3>
+<p>Tests were conducted to see how changes to service affect model outputs. Results confirmed that the calibrated model responds plausibly to service and operating changes, such as frequency reductions or travel time improvements.</p>
+<h3 id="horizon-year-forecasts">Horizon Year Forecasts</h3>
+<p>The model includes ridership forecasts for the years 2045 and 2050, accounting for projected changes in population, employment, and the transit network.</p>
 <ul>
-<li>Extract model files to a high-level directory (e.g., <code>C:\BostonSTOPS</code>).</li>
-<li>Ensure no blank spaces are in the file path.</li>
-<li>Launch <code>STOPSMenu.exe</code> and link the appropriate GIS and Python executables.</li>
-</ul>
-<h3 id="data-preparation">Data Preparation</h3>
-<ul>
-<li>Run <strong>Steps 7, 9, and 10</strong> individually from the STOPS menu.</li>
-<li>The status for each step will update to ‘FILES FOUND!’ upon successful completion.</li>
-</ul>
-<h3 id="run-batch-steps">Run Batch Steps</h3>
-<ul>
-<li>Execute the model by selecting <strong>Step 11</strong>, which runs all remaining batch processes.</li>
-<li>A full run for the Boston Regional model typically takes approximately five hours.</li>
-</ul>
-<h3 id="report-results">Report Results</h3>
-<ul>
-<li>After the run is complete, review results by selecting <strong>Step 12</strong>.</li>
-<li>Results can also be viewed directly by opening the text files in the <code>Reports</code> folder.</li>
+<li><strong>2045 Forecast:</strong> Regional transit boardings are forecasted to increase by <strong>38%</strong> compared to 2024.</li>
+<li><strong>2050 Forecast:</strong> Regional transit boardings are forecasted to increase by <strong>43%</strong> compared to 2024.</li>
 </ul>
         </div>
 

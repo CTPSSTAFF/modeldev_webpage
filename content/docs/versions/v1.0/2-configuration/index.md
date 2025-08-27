@@ -1,5 +1,5 @@
 ---
-title: "2. Boston Region Configuration (v0.1)"
+title: "2. Boston Region Configuration"
 ---
 
 The Boston Regional STOPS model has a specific configuration tailored to the region's geography and transit systems.

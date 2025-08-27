@@ -1,5 +1,5 @@
 ---
-title: "6. Example Application & Forecasts (v0.1)"
+title: "6. Example Application & Forecasts"
 ---
 
 This chapter presents a test application of the Boston Regional STOPS model for a corridor and provides horizon year forecasts.

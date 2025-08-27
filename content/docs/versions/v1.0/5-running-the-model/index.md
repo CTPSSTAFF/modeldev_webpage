@@ -1,5 +1,5 @@
 ---
-title: "5. Running the Model (v0.1)"
+title: "5. Running the Model"
 ---
 
 This guide outlines the steps for executing an initial run of the Boston Regional STOPS model, based on the official STOPS User Guide.

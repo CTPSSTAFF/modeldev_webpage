@@ -1,5 +1,5 @@
 ---
-title: "4. Model Calibration & Outputs (v0.1)"
+title: "4. Model Calibration & Outputs"
 ---
 
 This chapter describes the adjustments made to calibrate the model to observed conditions and summarizes the final STOPS estimates.

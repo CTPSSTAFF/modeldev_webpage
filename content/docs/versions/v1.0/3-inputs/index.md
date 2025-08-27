@@ -1,5 +1,5 @@
 ---
-title: "3. Model Inputs (v0.1)"
+title: "3. Model Inputs"
 ---
 
 This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model using STOPS version 2.53.

@@ -1,5 +1,5 @@
 ---
-title: "1. Introduction & Overview (v0.1)"
+title: "1. Introduction & Overview"
 ---
 
 This document describes the development of the Boston Regional STOPS Model.
