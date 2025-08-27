@@ -6,7 +6,9 @@
     
     <title>3. Model Inputs | Boston Region STOPS Model</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model using STOPS version 2.53.">
+    <meta name="description" content="This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model.
+Analysis Years
+The model is configured for several analysis years to support both short-term and long-range planning:">
     <meta name="generator" content="Hugo 0.148.2">
     
     
@@ -38,17 +40,20 @@
     <meta property="og:url" content="http://localhost:1313/boston-region-stops/docs/versions/v1.0/3-inputs/">
   <meta property="og:site_name" content="Boston Region STOPS Model">
   <meta property="og:title" content="3. Model Inputs">
-  <meta property="og:description" content="This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model using STOPS version 2.53.">
+  <meta property="og:description" content="This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model.
+Analysis Years The model is configured for several analysis years to support both short-term and long-range planning:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
 
   <meta itemprop="name" content="3. Model Inputs">
-  <meta itemprop="description" content="This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model using STOPS version 2.53.">
-  <meta itemprop="wordCount" content="242">
+  <meta itemprop="description" content="This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model.
+Analysis Years The model is configured for several analysis years to support both short-term and long-range planning:">
+  <meta itemprop="wordCount" content="333">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="3. Model Inputs">
-  <meta name="twitter:description" content="This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model using STOPS version 2.53.">
+  <meta name="twitter:description" content="This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model.
+Analysis Years The model is configured for several analysis years to support both short-term and long-range planning:">
 
 	
   </head><body class="ma0 avenir bg-near-white development">
@@ -114,28 +119,37 @@
 
     <main class="pb7" role="main">
       
-  
-    
+  
+        <article class="ph3 center" style="font-size: 1.115rem; max-width: 85rem; line-height: 1.21;">
 
+      
+      
+        
+          <a href="/boston-region-stops/docs/versions/v1.0/" class="mb4 f5 link dim">&laquo; Back to Documentation for Version 1.0 (Latest)</a>
+        
+      
 
-
-    <article class="ph3 center" style="font-size: 1.115rem; max-width: 85rem; line-height: 1.21;">
         
         
         
         <div class="nested-links">
-         <p>This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model using STOPS version 2.53.</p>
+         <p>This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model.</p>
 <h3 id="analysis-years">Analysis Years</h3>
-<p>The model is configured for several analysis years:</p>
+<p>The model is configured for several analysis years to support both short-term and long-range planning:</p>
 <ul>
 <li><strong>Current Year:</strong> 2024 (the calibration year)</li>
 <li><strong>10-Year Horizon:</strong> 2045 (to align with FTA CIG project requirements)</li>
 <li><strong>20-Year Horizon:</strong> 2050 (aligning with the region&rsquo;s Long-Range Transportation Plan)</li>
 </ul>
-<h3 id="mpo-data">MPO Data</h3>
-<p>STOPS requires TAZ-level population and employment data and zone-to-zone auto travel times and distances as inputs. These are obtained from the Boston Region MPO&rsquo;s regional travel demand model for the years 2019 (as a proxy for 2024) and 2050.</p>
-<h3 id="transit-network-gtfs">Transit Network (GTFS)</h3>
-<p>The General Transit Feed Specification (GTFS) format represents the transit network. The model includes Fall 2024 GTFS data for:</p>
+<h3 id="key-data-sources">Key Data Sources</h3>
+<h4 id="mpo-data">MPO Data</h4>
+<p>Data from the Boston Region MPO&rsquo;s regional travel demand model is a critical input. This includes:</p>
+<ul>
+<li><strong>Population and Employment:</strong> TAZ-level data for 2019 (as a proxy for 2024) and 2050 is used to grow census-based trip data to the correct analysis years.</li>
+<li><strong>Auto Travel Times:</strong> Zone-to-zone AM peak period auto travel times and distances (skims) for 2019 and 2050 are used.</li>
+</ul>
+<h4 id="transit-network-gtfs">Transit Network (GTFS)</h4>
+<p>The General Transit Feed Specification (GTFS) format represents the transit network. The model includes Fall 2024 GTFS data for five regional transit authorities:</p>
 <ul>
 <li>Massachusetts Bay Transportation Authority (MBTA)</li>
 <li>Brockton Area Transit Authority (BATA)</li>
@@ -143,17 +157,19 @@
 <li>Merrimack Valley Regional Transit Authority (MVRTA)</li>
 <li>MetroWest Regional Transit Authority (MWRTA)</li>
 </ul>
-<h3 id="existing-ridership-data">Existing Ridership Data</h3>
-<p>The model calibration target for current year regional weekday unlinked transit trips is set at <strong>887,322 boardings</strong>, based on Fall 2024 data from the MBTA, National Transit Database (NTD), and other sources.</p>
+<p>A separate 2050 GTFS network was developed for the MBTA to reflect long-range plans, including a redesigned bus network.</p>
+<h4 id="existing-ridership-data">Existing Ridership Data</h4>
+<p>The model calibration target for current year regional weekday unlinked transit trips is set at <strong>887,322 boardings</strong>. This figure is based on Fall 2024 data from the MBTA, the National Transit Database (NTD), and other regional sources.</p>
+<h4 id="census-data">Census Data</h4>
+<p>The model relies on the <strong>2012-2016 American Community Survey (ACS)</strong> and Census Transportation Planning Package (CTPP) Journey-to-Work datasets for base-year travel patterns.</p>
 <h3 id="other-key-input-files">Other Key Input Files</h3>
 <ul>
 <li><strong>Special Market File:</strong> A file containing zone-to-zone transit trips for air passengers traveling to/from Logan Airport.</li>
-<li><strong>Station Shape File:</strong> Includes locations and attributes for every transit stop in the region.</li>
-<li><strong>Walk Links File:</strong> A hybrid pedestrian network representing walk access to the transit system.</li>
-<li><strong>Fare Structure File:</strong> A simplified representation of the region’s transit fare system.</li>
+<li><strong>Station Shape File:</strong> Includes locations and key attributes (like observed boardings) for every transit stop in the region.</li>
+<li><strong>Walk Links File:</strong> A hybrid pedestrian network representing walk access to the transit system, with higher detail in transit-dense areas.</li>
+<li><strong>Fare Structure File:</strong> A simplified representation of the region’s complex transit fare system.</li>
 </ul>
         </div>
-
 
     </article>
 

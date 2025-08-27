@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>2. Boston Region Configuration | Boston Region STOPS Model</title>
+    <title>2. Model Configuration | Boston Region STOPS Model</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="The Boston Regional STOPS model has a specific configuration tailored to the region&rsquo;s geography and transit systems.
-Modeling Area
-The geographic coverage of the model includes the states of Massachusetts (MA), Rhode Island (RI), and New Hampshire (NH), generally aligning with the latest regional travel demand model. STOPS only analyzes zones whose centroids fall within 25 miles of an active transit stop.">
+    <meta name="description" content="This chapter describes the specific configuration of the Boston Regional STOPS model, which was developed and calibrated using STOPS version 2.53.">
     <meta name="generator" content="Hugo 0.148.2">
     
     
@@ -39,21 +37,18 @@ The geographic coverage of the model includes the states of Massachusetts (MA), 
 
     <meta property="og:url" content="http://localhost:1313/boston-region-stops/docs/versions/v1.0/2-configuration/">
   <meta property="og:site_name" content="Boston Region STOPS Model">
-  <meta property="og:title" content="2. Boston Region Configuration">
-  <meta property="og:description" content="The Boston Regional STOPS model has a specific configuration tailored to the region’s geography and transit systems.
-Modeling Area The geographic coverage of the model includes the states of Massachusetts (MA), Rhode Island (RI), and New Hampshire (NH), generally aligning with the latest regional travel demand model. STOPS only analyzes zones whose centroids fall within 25 miles of an active transit stop.">
+  <meta property="og:title" content="2. Model Configuration">
+  <meta property="og:description" content="This chapter describes the specific configuration of the Boston Regional STOPS model, which was developed and calibrated using STOPS version 2.53.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
 
-  <meta itemprop="name" content="2. Boston Region Configuration">
-  <meta itemprop="description" content="The Boston Regional STOPS model has a specific configuration tailored to the region’s geography and transit systems.
-Modeling Area The geographic coverage of the model includes the states of Massachusetts (MA), Rhode Island (RI), and New Hampshire (NH), generally aligning with the latest regional travel demand model. STOPS only analyzes zones whose centroids fall within 25 miles of an active transit stop.">
-  <meta itemprop="wordCount" content="220">
+  <meta itemprop="name" content="2. Model Configuration">
+  <meta itemprop="description" content="This chapter describes the specific configuration of the Boston Regional STOPS model, which was developed and calibrated using STOPS version 2.53.">
+  <meta itemprop="wordCount" content="284">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="2. Boston Region Configuration">
-  <meta name="twitter:description" content="The Boston Regional STOPS model has a specific configuration tailored to the region’s geography and transit systems.
-Modeling Area The geographic coverage of the model includes the states of Massachusetts (MA), Rhode Island (RI), and New Hampshire (NH), generally aligning with the latest regional travel demand model. STOPS only analyzes zones whose centroids fall within 25 miles of an active transit stop.">
+  <meta name="twitter:title" content="2. Model Configuration">
+  <meta name="twitter:description" content="This chapter describes the specific configuration of the Boston Regional STOPS model, which was developed and calibrated using STOPS version 2.53.">
 
 	
   </head><body class="ma0 avenir bg-near-white development">
@@ -110,7 +105,7 @@ Modeling Area The geographic coverage of the model includes the states of Massac
 
       <div class="tc-l pb2 ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          2. Boston Region Configuration
+          2. Model Configuration
         </h1>
         
       </div>
@@ -119,31 +114,40 @@ Modeling Area The geographic coverage of the model includes the states of Massac
 
     <main class="pb7" role="main">
       
-  
-    
+  
+        <article class="ph3 center" style="font-size: 1.115rem; max-width: 85rem; line-height: 1.21;">
 
+      
+      
+        
+          <a href="/boston-region-stops/docs/versions/v1.0/" class="mb4 f5 link dim">&laquo; Back to Documentation for Version 1.0 (Latest)</a>
+        
+      
 
-
-    <article class="ph3 center" style="font-size: 1.115rem; max-width: 85rem; line-height: 1.21;">
         
         
         
         <div class="nested-links">
-         <p>The Boston Regional STOPS model has a specific configuration tailored to the region&rsquo;s geography and transit systems.</p>
+         <p>This chapter describes the specific configuration of the Boston Regional STOPS model, which was developed and calibrated using <strong>STOPS version 2.53</strong>.</p>
 <h3 id="modeling-area">Modeling Area</h3>
-<p>The geographic coverage of the model includes the states of <strong>Massachusetts (MA)</strong>, <strong>Rhode Island (RI)</strong>, and <strong>New Hampshire (NH)</strong>, generally aligning with the latest regional travel demand model. STOPS only analyzes zones whose centroids fall within 25 miles of an active transit stop.</p>
+<p>The geographic coverage of the model includes the states of <strong>Massachusetts (MA)</strong>, <strong>Rhode Island (RI)</strong>, and <strong>New Hampshire (NH)</strong>, generally aligning with the latest regional travel demand model.</p>
+<p>While input files cover all three states, STOPS only actively analyzes zones whose centroids fall within 25 miles of a transit stop. This means the western portion of Massachusetts and the northern part of New Hampshire are not included in the active modeling area. Additionally, trip movements entirely within Rhode Island or New Hampshire are excluded from the analysis.</p>
+<p><img src="/boston-region-stops/images/documentation/v1.0/1-introduction/model-area.jpg" alt="STOPS Modeling Area Map" title="STOPS Modeling Area"></p>
 <h3 id="modeling-approach">Modeling Approach</h3>
-<p>The model uses the <strong>“Synthetic with Special Markets”</strong> approach. This method was chosen due to the absence of a recent, comprehensive origin-destination on-board survey. The &ldquo;Synthetic&rdquo; method, which uses census data, was supplemented with a special market trip table for travelers using Boston Logan International Airport. The model reflects average weekday ridership in fall 2024.</p>
+<p>The model uses the <strong>“Synthetic with Special Markets”</strong> approach. This method was chosen due to the absence of a recent, comprehensive origin-destination on-board survey. The &ldquo;Synthetic&rdquo; method, which uses census data, was supplemented with a special market trip table for travelers using <strong>Boston Logan International Airport</strong>. The model is calibrated to reflect average weekday ridership in fall 2024.</p>
 <h3 id="district-system">District System</h3>
 <p>STOPS uses districts to group Traffic Analysis Zones (TAZs) for scaling trip data and for reporting outputs. The districts in this model are defined to align with the boundaries used in the regional travel demand model, with a total of <strong>35 districts</strong>.</p>
+<p><img src="/boston-region-stops/images/documentation/v1.0/2-configuration/model-districts.jpg" alt="Map of the 35 districts in the STOPS model" title="Regional View of STOPS Districts">
+<em>Regional View</em></p>
+<p><img src="/boston-region-stops/images/documentation/v1.0/2-configuration/urban-area-view-with-rail-and-ferry-stations.jpg" alt="Map of the urban area districts with rail and ferry stations" title="Urban Area View of STOPS Districts">
+<em>Urban Area View with Rail and Ferry Stations</em></p>
 <h3 id="fixed-guideway-settings-fgs">Fixed Guideway Settings (FGS)</h3>
 <p>FGS values approximate the perceived benefits of fixed-guideway transit (like rail) compared to regular bus service.</p>
 <ul>
 <li><strong>Full FGS</strong> is applied to all existing heavy rail, light rail, commuter rail, and ferry services.</li>
-<li><strong>Partial FGS</strong> applies to services like Bus Rapid Transit (BRT). No routes are currently assigned a Partial FGS in this model.</li>
+<li><strong>Partial FGS</strong> can be applied to services like Bus Rapid Transit (BRT), but no routes are currently assigned a Partial FGS in this model.</li>
 </ul>
         </div>
-
 
     </article>
 

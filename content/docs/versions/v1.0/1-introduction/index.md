@@ -1,15 +1,15 @@
 ---
-title: "1. Introduction & Overview"
+title: "1. Introduction"
 ---
 
-This document describes the development of the Boston Regional STOPS Model.
+This document provides user guidance for the Boston Regional STOPS model (2024 version), which was developed for the Boston Region Metropolitan Planning Organization (MPO) using STOPS version 2.53.
 
-### STOPS Overview
+This user guide assumes prior familiarity with the STOPS modeling framework. For comprehensive instructions on how to use the STOPS software itself, users should refer to the Federal Transit Administration’s (FTA) *Simplified Trips-on-Project Software Version 2.52-2.53 User Guide*.
 
-The Simplified-Trips-on-Project Software (STOPS) is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios. It is a simplified method that project sponsors can use to predict trips-on-project measures and changes in Vehicle Miles of Travel (VMT).
+For additional context on the development of this specific implementation, including data inputs, assumptions, and calibration results, please consult the *Boston Regional STOPS Model Development Report*.
 
-Since its initial release in 2013, STOPS has been used for a wide range of applications, including:
-- Transit alternative analysis
-- Service planning
-- Long-range transportation planning
-- Ridership forecasts for FTA Capital Investment Grant (CIG) applications
+The following materials are available through the Boston Region MPO:
+* Model input and output files
+* The STOPS software package
+* The FTA STOPS User Guide
+* The Model Development Report

@@ -8,25 +8,25 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/boston-region-stops/docs/versions/v1.0/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1. Introduction &amp; Overview</title>
+      <title>1. Introduction</title>
       <link>http://localhost:1313/boston-region-stops/docs/versions/v1.0/1-introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/boston-region-stops/docs/versions/v1.0/1-introduction/</guid>
-      <description>&lt;p&gt;This document describes the development of the Boston Regional STOPS Model.&lt;/p&gt;&#xA;&lt;h3 id=&#34;stops-overview&#34;&gt;STOPS Overview&lt;/h3&gt;&#xA;&lt;p&gt;The Simplified-Trips-on-Project Software (STOPS) is a stand-alone computer program developed by the Federal Transit Administration (FTA) that applies a set of travel models to predict detailed transit travel patterns for user-specified scenarios. It is a simplified method that project sponsors can use to predict trips-on-project measures and changes in Vehicle Miles of Travel (VMT).&lt;/p&gt;</description>
+      <description>&lt;p&gt;This document provides user guidance for the Boston Regional STOPS model (2024 version), which was developed for the Boston Region Metropolitan Planning Organization (MPO) using STOPS version 2.53.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>2. Boston Region Configuration</title>
+      <title>2. Model Configuration</title>
       <link>http://localhost:1313/boston-region-stops/docs/versions/v1.0/2-configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/boston-region-stops/docs/versions/v1.0/2-configuration/</guid>
-      <description>&lt;p&gt;The Boston Regional STOPS model has a specific configuration tailored to the region&amp;rsquo;s geography and transit systems.&lt;/p&gt;&#xA;&lt;h3 id=&#34;modeling-area&#34;&gt;Modeling Area&lt;/h3&gt;&#xA;&lt;p&gt;The geographic coverage of the model includes the states of &lt;strong&gt;Massachusetts (MA)&lt;/strong&gt;, &lt;strong&gt;Rhode Island (RI)&lt;/strong&gt;, and &lt;strong&gt;New Hampshire (NH)&lt;/strong&gt;, generally aligning with the latest regional travel demand model. STOPS only analyzes zones whose centroids fall within 25 miles of an active transit stop.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This chapter describes the specific configuration of the Boston Regional STOPS model, which was developed and calibrated using &lt;strong&gt;STOPS version 2.53&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>3. Model Inputs</title>
       <link>http://localhost:1313/boston-region-stops/docs/versions/v1.0/3-inputs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/boston-region-stops/docs/versions/v1.0/3-inputs/</guid>
-      <description>&lt;p&gt;This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model using STOPS version 2.53.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This chapter describes the sources of the key input data used to develop the Boston Regional STOPS Model.&lt;/p&gt;&#xA;&lt;h3 id=&#34;analysis-years&#34;&gt;Analysis Years&lt;/h3&gt;&#xA;&lt;p&gt;The model is configured for several analysis years to support both short-term and long-range planning:&lt;/p&gt;</description>
     </item>
     <item>
       <title>4. Model Calibration &amp; Outputs</title>
