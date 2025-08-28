@@ -18,10 +18,8 @@ The model uses the **“Synthetic with Special Markets”** approach. This metho
 STOPS uses districts to group Traffic Analysis Zones (TAZs) for scaling trip data and for reporting outputs. The districts in this model are defined to align with the boundaries used in the regional travel demand model, with a total of **35 districts**.
 
 ![Map of the 35 districts in the STOPS model](/boston-region-stops/images/documentation/v1.0/2-configuration/model-districts.jpg "Regional View of STOPS Districts")
-*Regional View*
 
-![Map of the urban area districts with rail and ferry stations](/boston-region-stops/images/documentation/v1.0/2-configuration/urban-area-view-with-rail-and-ferry-stations.jpg "Urban Area View of STOPS Districts")
-*Urban Area View with Rail and Ferry Stations*
+![Map of the urban area districts with rail and ferry stations](/boston-region-stops/images/documentation/v1.0/2-configuration/urban-area-view-with-rail-and-ferry-stations.jpg "Urban Area View with Rail and Ferry Stations")
 
 ### Fixed Guideway Settings (FGS)
 FGS values approximate the perceived benefits of fixed-guideway transit (like rail) compared to regular bus service.

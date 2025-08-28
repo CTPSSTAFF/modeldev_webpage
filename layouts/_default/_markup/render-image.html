@@ -1,0 +1,11 @@
+{{/*
+  This template overrides how Hugo renders Markdown images.
+  It wraps the image and its title (used as a caption) in a <figure> element.
+  The entire figure is centered, including the caption text.
+*/}}
+<figure style="text-align: center;">
+  <img src="{{ .Destination }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} style="width: 20%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+  {{ with .Title }}
+    <figcaption>{{ . | markdownify }}</figcaption>
+  {{ end }}
+</figure>

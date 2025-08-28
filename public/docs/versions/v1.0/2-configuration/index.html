@@ -45,7 +45,7 @@
 
   <meta itemprop="name" content="2. Model Configuration">
   <meta itemprop="description" content="This chapter describes the specific configuration of the Boston Regional STOPS model, which was developed and calibrated using STOPS version 2.53.">
-  <meta itemprop="wordCount" content="284">
+  <meta itemprop="wordCount" content="290">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="2. Model Configuration">
   <meta name="twitter:description" content="This chapter describes the specific configuration of the Boston Regional STOPS model, which was developed and calibrated using STOPS version 2.53.">
@@ -132,15 +132,31 @@
 <h3 id="modeling-area">Modeling Area</h3>
 <p>The geographic coverage of the model includes the states of <strong>Massachusetts (MA)</strong>, <strong>Rhode Island (RI)</strong>, and <strong>New Hampshire (NH)</strong>, generally aligning with the latest regional travel demand model.</p>
 <p>While input files cover all three states, STOPS only actively analyzes zones whose centroids fall within 25 miles of a transit stop. This means the western portion of Massachusetts and the northern part of New Hampshire are not included in the active modeling area. Additionally, trip movements entirely within Rhode Island or New Hampshire are excluded from the analysis.</p>
-<p><img src="/boston-region-stops/images/documentation/v1.0/1-introduction/model-area.jpg" alt="STOPS Modeling Area Map" title="STOPS Modeling Area"></p>
+<p>
+<figure style="text-align: center;">
+  <img src="/boston-region-stops/images/documentation/v1.0/1-introduction/model-area.jpg" alt="STOPS Modeling Area Map" title="STOPS Modeling Area" style="width: 20%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+  
+    <figcaption>STOPS Modeling Area</figcaption>
+  
+</figure></p>
 <h3 id="modeling-approach">Modeling Approach</h3>
 <p>The model uses the <strong>“Synthetic with Special Markets”</strong> approach. This method was chosen due to the absence of a recent, comprehensive origin-destination on-board survey. The &ldquo;Synthetic&rdquo; method, which uses census data, was supplemented with a special market trip table for travelers using <strong>Boston Logan International Airport</strong>. The model is calibrated to reflect average weekday ridership in fall 2024.</p>
 <h3 id="district-system">District System</h3>
 <p>STOPS uses districts to group Traffic Analysis Zones (TAZs) for scaling trip data and for reporting outputs. The districts in this model are defined to align with the boundaries used in the regional travel demand model, with a total of <strong>35 districts</strong>.</p>
-<p><img src="/boston-region-stops/images/documentation/v1.0/2-configuration/model-districts.jpg" alt="Map of the 35 districts in the STOPS model" title="Regional View of STOPS Districts">
-<em>Regional View</em></p>
-<p><img src="/boston-region-stops/images/documentation/v1.0/2-configuration/urban-area-view-with-rail-and-ferry-stations.jpg" alt="Map of the urban area districts with rail and ferry stations" title="Urban Area View of STOPS Districts">
-<em>Urban Area View with Rail and Ferry Stations</em></p>
+<p>
+<figure style="text-align: center;">
+  <img src="/boston-region-stops/images/documentation/v1.0/2-configuration/model-districts.jpg" alt="Map of the 35 districts in the STOPS model" title="Regional View of STOPS Districts" style="width: 20%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+  
+    <figcaption>Regional View of STOPS Districts</figcaption>
+  
+</figure></p>
+<p>
+<figure style="text-align: center;">
+  <img src="/boston-region-stops/images/documentation/v1.0/2-configuration/urban-area-view-with-rail-and-ferry-stations.jpg" alt="Map of the urban area districts with rail and ferry stations" title="Urban Area View with Rail and Ferry Stations" style="width: 20%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+  
+    <figcaption>Urban Area View with Rail and Ferry Stations</figcaption>
+  
+</figure></p>
 <h3 id="fixed-guideway-settings-fgs">Fixed Guideway Settings (FGS)</h3>
 <p>FGS values approximate the perceived benefits of fixed-guideway transit (like rail) compared to regular bus service.</p>
 <ul>
