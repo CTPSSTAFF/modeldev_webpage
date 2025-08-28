@@ -62,8 +62,16 @@ w-100                         Sizing        Sets width: 100%.
 w-50-m                        Sizing        Sets width: 50% on medium screens and up.
 w-third-l                     Sizing        Sets width: 33.333% on large screens. -->
 
-
   <article class="ph3 ph4-ns pb3 pb4-ns pt1 pt2-ns nested-copy-line-height">
+
+    {{/* New "Back to Parent" link for list pages */}}
+    {{ with .Parent }}
+      {{ if .IsSection }}
+        <div class="mw9">
+          <a href="{{ .RelPermalink }}" class="mb4 f5 link dim">&laquo; Back to {{ .Title }}</a>
+        </div>
+      {{ end }}
+    {{ end }}
 
     {{/* This section displays the intro text from the page's _index.md file */}}
     <section class="cf ph3 ph5-l pb3 f4 mw9 center lh-copy mid-gray">
@@ -71,7 +79,6 @@ w-third-l                     Sizing        Sets width: 33.333% on large screens
         {{- .Content -}}
       </div>
     </section>
-
 
     <!-- Handle Documentation Page's default Panel Removal  -->
     {{ if not (eq .Permalink (absLangURL "docs/")) }}
